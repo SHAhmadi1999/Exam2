@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Typography dimens-->
+    <dimen name="Header1">30sp</dimen>
+    <dimen name="Header2">24sp</dimen>
+    <dimen name="Header3">20sp</dimen>
+    <dimen name="Header4">18sp</dimen>
+    <dimen name="Header5">16sp</dimen>
+    <dimen name="Header6">14sp</dimen>
+
+    <dimen name="Body1">16sp</dimen>
+    <dimen name="Body2">14sp</dimen>
+
+    <dimen name="SubTitleText1">16sp</dimen>
+    <dimen name="SubTitleText2">14sp</dimen>
+
+    <dimen name="ButtonText">24sp</dimen>
+    <dimen name="captionText">12sp</dimen>
+    <dimen name="OverLineText">10sp</dimen>
+    <!--shape corners size-->
+    <dimen name="cornerSizeSmall">6dp</dimen>
+    <dimen name="cornerSizeMedium">12dp</dimen>
+    <dimen name="cornerSizeLarge">12dp</dimen>
+<!--space dimens-->
+
+    <dimen name="xsmall">8dp</dimen>
+    <dimen name="small">16dp</dimen>
+    <dimen name="avrage">18dp</dimen>
+    <dimen name="medium">26dp</dimen>
+    <dimen name="large">34dp</dimen>
+    <dimen name="Xlarge">48dp</dimen>
+    <dimen name="XXlarge">64dp</dimen>
+</resources>

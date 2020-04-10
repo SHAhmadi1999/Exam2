@@ -1,0 +1,227 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorPrimary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+<!--
+        <item name="colorError">@color/colorPrimary</item>
+        <item name="colorOnError">@color/colorPrimary</item>-->
+
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+
+        <!--Typography-->
+        <item name="textAppearanceHeadline1">@style/textAppearance.MyApp.Header1</item>
+        <item name="textAppearanceHeadline2">@style/textAppearance.MyApp.Header2</item>
+        <item name="textAppearanceHeadline3">@style/textAppearance.MyAPP.Header3</item>
+        <item name="textAppearanceHeadline4">@style/textAppearance.MyApp.Header4</item>
+        <item name="textAppearanceHeadline5">@style/textAppearance.MyApp.Header5</item>
+        <item name="textAppearanceHeadline6">@style/textAppearance.MyApp.Header6</item>
+
+        <item name="textAppearanceBody1">@style/TextAppearance.MyAPP.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.MyApp.Body2</item>
+
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.MyAPP.SubTitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.MyAPP.SubTitle2</item>
+
+        <item name="textAppearanceButton">@style/TextAppearance.MyAPP.Button</item>
+     <!--   <item name="textAppearanceCaption">@style/TextAppearance.MyApp.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.MyApp.OverLine</item>-->
+
+        <!--Shapes-->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyApp.SmallComponent
+        </item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyApp.MediumComponent
+        </item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyApp.LargeComponent
+        </item>
+
+         <!--widget-->
+         <item name="buttonStyle">@style/button_style</item>
+         <item name="materialButtonStyle">@style/button_style</item>
+
+
+
+    </style>
+
+    <!--Typography
+    <!-Headers-->
+    <style name="textAppearance.MyApp.Header1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/walsheim_pro_medium</item>
+        <item name="android:fontFamily">@font/walsheim_pro_medium</item>
+        <item name="android:textSize">@dimen/Header1</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="textAppearance.MyApp.Header2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/walsheim_pro_medium</item>
+        <item name="android:fontFamily">@font/walsheim_pro_medium</item>
+        <item name="android:textSize">@dimen/Header2</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="textAppearance.MyAPP.Header3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/rubik_medium</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">@dimen/Header3</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="textAppearance.MyApp.Header4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/rubik_medium</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">@dimen/Header4</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="textAppearance.MyApp.Header5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/rubik_medium</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">@dimen/Header5</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="textAppearance.MyApp.Header6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/walsheim_pro_regular</item>
+        <item name="android:fontFamily">@font/walsheim_pro_regular</item>
+        <item name="android:textSize">@dimen/Header6</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!--Subtitles-->
+    <style name="TextAppearance.MyAPP.SubTitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/rubik_medium</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">@dimen/SubTitleText1</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.MyAPP.SubTitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/rubik_medium</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">@dimen/SubTitleText2</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+    <!--Body-->
+    <style name="TextAppearance.MyAPP.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/rubik_medium</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">@dimen/Body1</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/rubik_medium</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">@dimen/Body2</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.MyAPP.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/rubik_medium</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">@dimen/ButtonText</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/rubik_medium</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">@dimen/captionText</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.OverLine" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/rubik_medium</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">@dimen/OverLineText</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!--    Shapes-->
+    <style name="ShapeAppearance.MyApp.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/cornerSizeSmall</item>
+    </style>
+
+    <style name="ShapeAppearance.MyApp.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/cornerSizeMedium</item>
+    </style>
+
+    <style name="ShapeAppearance.MyApp.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSize">@dimen/cornerSizeLarge</item>
+    </style>
+<!--style in app-->
+    <style name="titleH1OnPrimary" parent="@style/textAppearance.MyApp.Header1">
+        <item name="android:textColor">@color/colorOnPrimary</item>
+    </style>
+
+    <style name="subtitle2OnPrimary" parent="@style/TextAppearance.MyAPP.SubTitle2">
+        <item name="android:textColor">@color/colorOnPrimary</item>
+    </style>
+
+    <style name="titleH1OnBackground" parent="@style/textAppearance.MyApp.Header1">
+        <item name="android:textColor">@color/colorOnBackground</item>
+    </style>
+
+    <style name="subtitle2OnBackground" parent="@style/TextAppearance.MyAPP.SubTitle2">
+        <item name="android:textColor">@color/colorOnBackground</item>
+    </style>
+
+    <style name="body2OnBackground" parent="@style/TextAppearance.AppCompat.Body2">
+        <item name="android:textColor">@color/colorOnBackground</item>
+    </style>
+
+    <style name="body2OnPrimary" parent="@style/TextAppearance.AppCompat.Body2">
+        <item name="android:textColor">@color/colorOnBackground</item>
+    </style>
+    <style name="button_style" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/walsheim_pro_medium</item>
+        <item name="android:padding">@dimen/small</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+    <style name="surfaceStyle" parent="@style/ShapeAppearance.MyApp.MediumComponent">
+        <item name="android:background">@color/colorSurface</item>
+    </style>
+
+    <style name="backdrop_bottom" parent="@style/ShapeAppearance.MyApp.LargeComponent">
+        <item name="background">@color/colorBackground</item>
+    </style>
+    <style name="backdrop_top" parent="@style/ShapeAppearance.MyApp.LargeComponent">
+        <item name="cornerFamilyBottomLeft"/>
+        <item name="cornerFamilyBottomRight"/>
+    </style>
+
+    <style name="shape_card" parent="@style/ShapeAppearance.MyApp.MediumComponent">
+        <item name="background">@color/colorPrimaryVariant</item>
+    </style>
+
+</resources>

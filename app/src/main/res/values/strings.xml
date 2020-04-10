@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Exam2</string>
+    <string name="name_app">Bank Name</string>
+    <string name="text_secure">100%Safe and Secure</string>
+    <string name="law_copyright">Copyright © 2013-2019 Bank Name All rights reserved.</string>
+    <string name="title_onBoarding">Freedom of Banking at\nyour finger tip.</string>
+    <string name="title_Registration">Choose your registered sim</string>
+    <string name="title_Fingerprint">Use your finger print to make\n sure your account safe</string>
+    <string name="intro_onBoarding">Unhealthy uterus or ovarian cyst .Woman uterus concept.\nVector modern style cartoon character illustration</string>
+    <string name="intro1_Registration">Unhealthy uterus or ovarian cyst .Woman uterus concept.\nVector modern style cartoon character illustration</string>
+    <string name="intro2_Registration">Lorem ipsum dolor sit amet,consectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore\n magna aliqua.Ut enim ad minim veniam, quis nostrud </string>
+    <string name="text_getStart">Get Start</string>
+    <string name="intro1_fingerprint">Unhealthy uterus or ovarian cyst .Woman uterus concept.\nVector modern style cartoon character illustration</string>
+    <string name="intro2_fingerprint">Lorem ipsum dolor sit amet,consectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore\n magna aliqua.Ut enim ad minim veniam, quis nostrud </string>
+    <string name="text_welcome">Welcome Back</string>
+    <string name="title_home">Ramakrishnan</string>
+</resources>
