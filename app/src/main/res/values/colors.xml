@@ -17,4 +17,9 @@
 
     <color name="colorBackground">#ffffff</color>
     <color name="colorOnBackground">#3D2582</color>
+
+    <!--color use app-->
+    <color name="color_hint">#707070</color>
+    <color name="color_homeNumber">#F5F6FA</color>
+    <color name="color_background_homeNumber">#FCFCFC</color>
 </resources>

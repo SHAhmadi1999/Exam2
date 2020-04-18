@@ -17,7 +17,8 @@
         app:layout_constraintVertical_bias="0.4" />
 
     <TextView
-        style="@style/titleH1OnPrimary"
+        style="?attr/textAppearanceHeadline2"
+        android:textColor="@color/colorOnPrimary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/small"
@@ -27,11 +28,12 @@
         app:layout_constraintTop_toBottomOf="@id/img_logo" />
 
     <TextView
-        style="@style/textH6OnPrimary"
+        style="?attr/textAppearanceCaption"
+        android:textColor="@color/colorOnPrimary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/secure_icon"
-        android:drawablePadding="@dimen/avrage"
+        android:drawablePadding="@dimen/average"
         android:gravity="center"
         android:text="@string/text_secure"
         app:layout_constraintBottom_toTopOf="@id/tv_lawCopyright"
@@ -39,7 +41,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
     <TextView
-        style="@style/textH6OnPrimary"
+        style="?attr/textAppearanceOverline"
+        android:textColor="@color/colorOnPrimary"
         android:id="@+id/tv_lawCopyright"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

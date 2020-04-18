@@ -9,9 +9,22 @@
     <string name="intro_onBoarding">Unhealthy uterus or ovarian cyst .Woman uterus concept.\nVector modern style cartoon character illustration</string>
     <string name="intro1_Registration">Unhealthy uterus or ovarian cyst .Woman uterus concept.\nVector modern style cartoon character illustration</string>
     <string name="intro2_Registration">Lorem ipsum dolor sit amet,consectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore\n magna aliqua.Ut enim ad minim veniam, quis nostrud </string>
-    <string name="text_getStart">Get Start</string>
+    <string name="text_getStart">Get Started</string>
     <string name="intro1_fingerprint">Unhealthy uterus or ovarian cyst .Woman uterus concept.\nVector modern style cartoon character illustration</string>
     <string name="intro2_fingerprint">Lorem ipsum dolor sit amet,consectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore\n magna aliqua.Ut enim ad minim veniam, quis nostrud </string>
     <string name="text_welcome">Welcome Back</string>
     <string name="title_home">Ramakrishnan</string>
+    <string name="text_pay">Pay</string>
+    <string name="text_Products">Our Products</string>
+    <string name="text_accountBalance">Overall Account Balance</string>
+    <string name="hintSearch">Search for payee</string>
+    <string name="name_paid">Ramky</string>
+    <string name="text_recentlyPaid">Recently Paid</string>
+    <string name="text_PaidFor">Pay For Merchant </string>
+    <string name="text_contact">Contacts</string>
+    <string name="text_PayMoney">Pay Money</string>
+    <string name="text_EnterAmount">Enter Amount</string>
+    <string name="text_PayingTo">Paying to</string>
+    <string name="text_RecentTransactions">Recent Transactions</string>
+    <string name="text_Earn">Earn more with competitive rates of interest on your Fixed Deposits</string>
 </resources>

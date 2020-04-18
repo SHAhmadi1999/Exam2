@@ -7,38 +7,38 @@
 
     <TextView
         android:id="@+id/title_register"
-        style="@style/titleH1OnBackground"
+        style="?attr/textAppearanceHeadline2"
+        android:textColor="@color/colorOnBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/XXlarge"
-        android:lineSpacingExtra="@dimen/xsmall"
         android:text="@string/title_Registration"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:lineSpacingExtra="@dimen/xsmall"
         app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/large"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/intro1_register"
-        style="@style/subtitleOnBackground"
+        style="?attr/textAppearanceBody1"
+        android:textColor="@color/colorOnBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/small"
         android:text="@string/intro1_Registration"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/title_register"
         app:layout_constraintTop_toBottomOf="@id/title_register" />
 
     <ImageView
         android:id="@+id/img_sim1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/Xlarge"
         android:layout_marginTop="@dimen/small"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         android:src="@drawable/sim1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/intro2_register"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.4" />
 
@@ -58,16 +58,18 @@
 
     <TextView
         android:id="@+id/intro2_register"
-        style="@style/subtitleOnBackground"
+        style="?attr/textAppearanceBody1"
+        android:textColor="@color/colorOnBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/medium"
+        android:layout_marginTop="@dimen/large"
         android:text="@string/intro2_Registration"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/button"
+        app:layout_constraintEnd_toEndOf="@id/button"
         app:layout_constraintTop_toBottomOf="@id/img_sim1" />
 
     <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/large"

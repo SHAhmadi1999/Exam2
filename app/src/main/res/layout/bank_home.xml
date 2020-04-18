@@ -1,40 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorPrimary">
-<androidx.appcompat.widget.Toolbar
-    android:id="@+id/toolbar"
-    android:layout_width="match_parent"
-    android:layout_height="?actionBarDivider"
-    app:layout_constraintTop_toTopOf="parent"
-    app:navigationIcon="@drawable/menu"
-    android:padding="@dimen/xsmall"
-    android:gravity="center"
-    app:menu="@menu/menu_home"/>
-<TextView
-    android:id="@+id/tv_welcome"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/toolbar"
-    android:layout_marginTop="@dimen/avrage"
-    android:layout_marginStart="@dimen/large"
-    android:text="@string/text_welcome"
-    style="@style/subtitleOnPrimary"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarDivider"
+        android:gravity="center"
+        android:padding="@dimen/xxsmall"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_home"
+        app:navigationIcon="@drawable/menu" />
+
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/tv_welcome"
+        style="?attr/textAppearanceHeadline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_welcome"
-        android:layout_marginTop="@dimen/xsmall"
         android:layout_marginStart="@dimen/large"
+        android:layout_marginTop="@dimen/small"
+        android:text="@string/text_welcome"
+        android:textColor="@color/colorOnPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/title"
+        style="?attr/textAppearanceHeadline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large"
+        android:layout_marginTop="@dimen/xsmall"
         android:text="@string/title_home"
-        style="@style/titleH1OnPrimary"/>
+        android:textColor="@color/colorOnPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome" />
 
+    <LinearLayout
+        android:id="@+id/view_surface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium"
+        android:layout_marginTop="@dimen/average"
+        android:layout_marginEnd="@dimen/medium"
+        android:background="@drawable/shape_surface"
+        android:orientation="vertical"
+        android:padding="@dimen/medium"
+        app:layout_constraintTop_toBottomOf="@id/title">
 
+        <TextView
+            style="?attr/textAppearanceHeadline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/xsmall"
+            android:text="@string/text_accountBalance"
+            android:textColor="@color/colorOnSurface" />
+
+        <TextView
+            style="?attr/textAppearanceHeadline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/xxsmall"
+            android:text="$ 5,483"
+            android:textColor="@color/colorOnSurface" />
+
+        <TextView
+            style="?attr/textAppearanceCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/bg"
+            android:drawablePadding="@dimen/small"
+            android:padding="@dimen/xxsmall"
+            android:text="2345"
+            android:textColor="@color/colorOnSurface" />
+
+        <TextView
+            style="?attr/textAppearanceOverline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/Bell"
+            android:drawablePadding="@dimen/small"
+            android:lineSpacingExtra="@dimen/xxsmall"
+            android:padding="@dimen/xsmall"
+            android:text="@string/text_Earn"
+            android:textAllCaps="false"
+            android:textColor="@color/colorOnSurface" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large"
+        android:layout_marginTop="@dimen/average"
+        android:layout_marginEnd="@dimen/large"
+        android:padding="@dimen/xxsmall"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/view_surface"
+        tools:itemCount="4"
+        tools:listitem="@layout/card_menu_home_horizental" />
+
+    <TextView
+        android:id="@+id/tv_title_products"
+        style="?attr/textAppearanceHeadline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large"
+        android:layout_marginTop="@dimen/medium"
+        android:text="@string/text_Products"
+        android:textColor="@color/colorOnPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/menuProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large"
+        android:layout_marginTop="@dimen/small"
+        android:padding="@dimen/xsmall"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_products"
+        tools:itemCount="5"
+        tools:listitem="@layout/card_menu_home_horizental" />
+
+    <LinearLayout
+        android:id="@+id/bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bottomsheet"
+        app:layout_constraintTop_toBottomOf="@id/menuProducts"
+        android:layout_marginTop="@dimen/large"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            style="?attr/textAppearanceSubtitle1"
+            android:id="@+id/tv_Transactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large"
+            android:layout_marginStart="@dimen/large"
+            android:layout_marginBottom="@dimen/medium"
+            android:text="@string/text_accountBalance"
+            android:textColor="@color/colorOnBackground" />
+        <androidx.recyclerview.widget.RecyclerView
+            app:layout_constraintTop_toBottomOf="@id/tv_Transactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/card_transaction"
+            app:spanCount="1"
+            tools:itemCount="9"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+</LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

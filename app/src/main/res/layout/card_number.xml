@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_background_homeNumber">
+    <TextView
+        android:paddingEnd="@dimen/XXlarge"
+        android:paddingStart="@dimen/XXlarge"
+        android:paddingBottom="@dimen/small"
+        android:paddingTop="@dimen/small"
+        android:layout_margin="@dimen/xsmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textStyle="bold"
+        android:textSize="@dimen/Header1"
+        android:background="@drawable/shape_surface"
+        android:backgroundTint="@color/color_homeNumber"/>
+
+</androidx.cardview.widget.CardView>

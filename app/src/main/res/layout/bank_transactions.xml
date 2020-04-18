@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:id="@+id/bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bottomsheet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/large"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            style="?attr/textAppearanceSubtitle1"
+            android:id="@+id/tv_Transactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large"
+            android:layout_marginStart="@dimen/large"
+            android:layout_marginBottom="@dimen/medium"
+            android:text="@string/text_RecentTransactions"
+            android:textColor="@color/colorOnBackground" />
+        <androidx.recyclerview.widget.RecyclerView
+            app:layout_constraintTop_toBottomOf="@id/tv_Transactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/card_transaction"
+            app:spanCount="1"
+            tools:itemCount="20"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/view_chips"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bottomsheet"
+        android:backgroundTint="@color/color_background_homeNumber"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/large"
+        android:orientation="horizontal"
+android:paddingTop="@dimen/medium"
+        android:paddingBottom="@dimen/medium"
+        android:paddingStart="@dimen/small"
+        android:paddingEnd="@dimen/small">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="All"
+            android:gravity="center"
+            android:background="@drawable/shape_chip"
+            android:textColor="@color/colorOnPrimary"
+            android:padding="@dimen/xsmall"
+            android:paddingBottom="@dimen/xsmall"
+            android:layout_margin="@dimen/xsmall"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:gravity="center"
+            android:background="@drawable/shape_chip_outline"
+            android:textColor="@color/colorOnBackground"
+            android:padding="@dimen/xsmall"
+            android:paddingBottom="@dimen/xsmall"
+            android:layout_margin="@dimen/xsmall"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Received"
+            android:gravity="center"
+            android:background="@drawable/shape_chip_outline"
+            android:textColor="@color/colorOnBackground"
+            android:padding="@dimen/xsmall"
+            android:paddingBottom="@dimen/xsmall"
+            android:layout_margin="@dimen/xsmall"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/ic_filter"
+            android:background="@drawable/shape_chip_outline"
+            android:textColor="@color/colorOnPrimary"
+            android:paddingEnd="@dimen/xsmall"
+            android:paddingStart="@dimen/xsmall"
+            android:layout_margin="@dimen/xsmall"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  android:layout_margin="@dimen/small"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton
+        android:id="@+id/img_kindTransaction"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/recharge"
+        android:background="@drawable/shape_surface"
+        android:backgroundTint="@color/colorPrimaryVariant"
+        android:padding="@dimen/small"
+        />
+    <TextView
+        android:id="@+id/tv_kindTransaction"
+        style="?attr/textAppearanceSubtitle2"
+        app:layout_constraintStart_toEndOf="@id/img_kindTransaction"
+        app:layout_constraintTop_toTopOf="@id/img_kindTransaction"
+        android:layout_marginStart="@dimen/small"
+        android:text="Cash Withdrawal"
+        android:textColor="@color/colorOnBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small"/>
+    <TextView
+        style="?attr/textAppearanceHeadline6"
+        app:layout_constraintStart_toEndOf="@id/img_kindTransaction"
+        app:layout_constraintTop_toBottomOf="@id/tv_kindTransaction"
+        android:layout_marginStart="@dimen/small"
+        android:text="10:30 16 Jun"
+        android:textColor="@color/colorOnBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xsmall"/>
+    <TextView
+        style="?attr/textAppearanceHeadline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/small"
+        android:text="$ 22.60"
+        android:textColor="@color/colorSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xsmall"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

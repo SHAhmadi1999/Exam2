@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/xsmall"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton
+        android:id="@+id/img_paid"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_person"
+        android:background="@drawable/shape_surface"
+        android:backgroundTint="@color/colorPrimaryVariant"
+        android:padding="@dimen/average"
+        />
+    <TextView
+        style="?attr/textAppearanceCaption"
+        app:layout_constraintStart_toStartOf="@id/img_paid"
+        app:layout_constraintEnd_toEndOf="@id/img_paid"
+        android:text="@string/name_paid"
+        android:textColor="@color/colorOnBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/img_paid"
+        android:layout_marginTop="@dimen/small"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
