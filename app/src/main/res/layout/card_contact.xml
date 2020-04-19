@@ -13,7 +13,7 @@ app:layout_constraintStart_toStartOf="parent"
         android:src="@drawable/ic_person"
         android:background="@drawable/shape_contact"
         android:backgroundTint="@color/colorPrimaryVariant"
-        android:padding="@dimen/small"
+        android:padding="@dimen/xsmall"
         />
     <TextView
         android:id="@+id/tv_nameContact"

@@ -94,7 +94,4 @@ android:paddingTop="@dimen/medium"
             android:layout_margin="@dimen/xsmall"/>
 
     </LinearLayout>
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
