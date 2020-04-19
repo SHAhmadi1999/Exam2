@@ -15,18 +15,19 @@ app:layout_constraintStart_toStartOf="parent"
         android:backgroundTint="@color/colorPrimaryVariant"
         android:padding="@dimen/xsmall"
         />
+
     <TextView
         android:id="@+id/tv_nameContact"
         style="?attr/textAppearanceHeadline4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/img_contact"
-        android:layout_marginStart="@dimen/average"
-        android:layout_marginTop="@dimen/small"
-        android:text="Aashif"
-        android:textColor="@color/colorOnBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        />
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/xxsmall"
+        android:text="Aashif"
+        android:textColor="@color/colorOnBackground"
+        app:layout_constraintStart_toEndOf="@id/img_contact"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_numberContact"
         style="?attr/textAppearanceHeadline6"
