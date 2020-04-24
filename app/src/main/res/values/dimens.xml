@@ -23,15 +23,15 @@
     <dimen name="cornerSizeMedium">26dp</dimen>
     <dimen name="cornerSizeLarge">26dp</dimen>
 <!--space dimens-->
-    <dimen name="xxsmall">4dp</dimen>
-    <dimen name="xsmall">8dp</dimen>
-    <dimen name="small">16dp</dimen>
-    <dimen name="average">22dp</dimen>
-    <dimen name="medium">26dp</dimen>
+    <dimen name="xxsmall">3dp</dimen>
+    <dimen name="xsmall">5dp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="average">16dp</dimen>
+    <dimen name="standard">18dp</dimen>
+    <dimen name="medium">24dp</dimen>
     <dimen name="large">34dp</dimen>
     <dimen name="Xlarge">48dp</dimen>
-    <dimen name="XXlarge">64dp</dimen>
-    <dimen name="big">90dp</dimen>
+
 
     <!--height-->
     <dimen name="height_backgroundHomeNumber">400dp</dimen>

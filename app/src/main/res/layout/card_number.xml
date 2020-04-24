@@ -4,9 +4,11 @@
     android:layout_height="wrap_content"
     android:background="@color/color_background_homeNumber">
     <TextView
-        android:paddingEnd="@dimen/XXlarge"
-        android:paddingStart="@dimen/XXlarge"
+
         android:paddingBottom="@dimen/small"
+        android:ems="3"
+        android:gravity="center"
+
         android:paddingTop="@dimen/small"
         android:layout_margin="@dimen/xsmall"
         android:layout_width="wrap_content"

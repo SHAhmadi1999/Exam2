@@ -11,7 +11,7 @@
         android:textColor="@color/colorOnBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/XXlarge"
+        android:layout_marginTop="@dimen/Xlarge"
         android:text="@string/title_Registration"
         android:lineSpacingExtra="@dimen/xsmall"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,34 +28,43 @@
         android:text="@string/intro1_Registration"
         app:layout_constraintStart_toStartOf="@id/title_register"
         app:layout_constraintTop_toBottomOf="@id/title_register" />
-
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_sim1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/card_sim2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4">
     <ImageView
         android:id="@+id/img_sim1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/small"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/sim1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@id/intro2_register"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        android:src="@drawable/sim1" />
+    </com.google.android.material.card.MaterialCardView>
+
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/card_sim2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toEndOf="@id/card_sim1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintVertical_bias="0.4">
 
     <ImageView
         android:id="@+id/img_sim2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/Xlarge"
-        android:layout_marginTop="@dimen/small"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/sim2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/img_sim1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
-
+        android:src="@drawable/sim1"
+     />
+</com.google.android.material.card.MaterialCardView>
     <TextView
         android:id="@+id/intro2_register"
         style="?attr/textAppearanceBody1"
@@ -66,7 +75,7 @@
         android:text="@string/intro2_Registration"
         app:layout_constraintStart_toStartOf="@id/button"
         app:layout_constraintEnd_toEndOf="@id/button"
-        app:layout_constraintTop_toBottomOf="@id/img_sim1" />
+        app:layout_constraintTop_toBottomOf="@id/card_sim1" />
 
     <Button
         android:id="@+id/button"
@@ -74,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/large"
         android:layout_marginEnd="@dimen/large"
-        android:layout_marginBottom="@dimen/XXlarge"
+        android:layout_marginBottom="@dimen/Xlarge"
         android:text="@string/text_getStart"
         app:layout_constraintBottom_toBottomOf="parent"/>
 

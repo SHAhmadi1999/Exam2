@@ -3,19 +3,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <TextView
         android:id="@+id/title_fingerprint"
-        style="?attr/textAppearanceHeadline2"
-        android:textColor="@color/colorOnBackground"
+        android:textAppearance="?attr/textAppearanceHeadline2"
+        app:layout_constraintHorizontal_bias="0.3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:lineSpacingExtra="@dimen/xsmall"
         android:text="@string/title_Fingerprint"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="@dimen/XXlarge"
+        android:textColor="@color/colorOnBackground"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="@dimen/large"
-       />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="@dimen/Xlarge"/>
 
     <TextView
         android:id="@+id/intro1_fingerprint"
@@ -53,7 +54,7 @@
         app:layout_constraintEnd_toEndOf="@id/button"
         android:textColor="@color/colorOnBackground"
        app:layout_constraintBottom_toTopOf="@id/button"
-        android:layout_marginBottom="@dimen/xsmall"/>
+        android:layout_marginBottom="@dimen/average"/>
 
     <Button
         android:id="@+id/button"
@@ -61,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/large"
         android:layout_marginEnd="@dimen/large"
-        android:layout_marginBottom="@dimen/XXlarge"
+        android:layout_marginBottom="@dimen/Xlarge"
         android:text="@string/text_getStart"
         app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
